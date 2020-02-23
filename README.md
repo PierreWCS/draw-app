@@ -1,4 +1,4 @@
-Demo here : http://https://my-draw-app.netlify.com
+Demo here : https://my-draw-app.netlify.com
 
 ## Available Scripts
 
