@@ -32,11 +32,14 @@ const DrawPage = () => {
           }}
         />
         {signatureImage ? (
-          <img
-            className="signatureSave"
-            src={signatureImage}
-            alt="signature png"
-          />
+          <div>
+            <p style={{ color: 'white' }}>Right click on me to download it</p>
+            <img
+              className="signatureSave"
+              src={signatureImage}
+              alt="signature png"
+            />
+          </div>
         ) : null}
       </div>
       <div className="selectedColorContainer">
