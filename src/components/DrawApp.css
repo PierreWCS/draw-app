@@ -34,7 +34,7 @@
 }
 
 .colorPicker {
-    cursor: crosshair;
+    cursor: pointer;
     width: 45px;
     height: 45px;
     margin: 5px 5px 5px 5px;
@@ -71,4 +71,37 @@
 
 .color6 {
     background-color: black;
+}
+
+.buttonsContainer {
+    margin: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.eraseButton {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: indianred;
+    color: #282c34;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.saveButton {
+    width: 150px;
+    font-size: 18px;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: transparent;
 }

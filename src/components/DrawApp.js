@@ -26,7 +26,7 @@ const DrawPage = () => {
         <SignatureCanvas
           dotSize={0.2}
           penColor={selectedColor}
-          canvasProps={{ width: 600, height: 600, className: 'sigCanvas' }}
+          canvasProps={{ width: 1500, height: 600, className: 'sigCanvas' }}
           ref={ref => {
             setSigPad(ref);
           }}
@@ -51,12 +51,14 @@ const DrawPage = () => {
         <div onClick={() => changePenColor('#FB9179')} className="colorPicker color5" />
         <div onClick={() => changePenColor('black')} className="colorPicker color6" />
       </div>
-      <button onClick={clear} type="button">
-        Effacer
-      </button>
-      <button onClick={trim} type="button">
-        Sauvegarder
-      </button>
+      <div className="buttonsContainer">
+        <button className="eraseButton" onClick={clear} type="button">
+          Erase
+        </button>
+        <button className="saveButton" onClick={trim} type="button">
+          Save
+        </button>
+      </div>
     </div>
   )
 };
